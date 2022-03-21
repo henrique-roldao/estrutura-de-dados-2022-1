@@ -1,19 +1,26 @@
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.util.Random;
+
 public class Atividade1 {
 
     public static void main(String[] args) {
+        DecimalFormat decimalFormat = new DecimalFormat("#,##0");
+        decimalFormat.setRoundingMode(RoundingMode.DOWN);
         int count = 0;
-        double average, total;
+        double average, total=0;
         double [] temp = new double[7];
 
-        temp [0] = 23.3;
-        temp [1] = 23.7;
-        temp [2] = 28.2;
-        temp [3] = 15.0;
-        temp [4] = 13.1;
-        temp [5] = 21.9;
-        temp [6] = 25.3;
+        Random random = new Random();
 
-        total = temp[0] + temp[1] + temp[2] + temp[3] + temp[4] + temp[5] + temp[6];
+        for(int i = 0; i < temp.length; i++) {
+            temp[i] = random.nextDouble(40)+1;
+        }
+
+        for(int i = 0; i < temp.length; i++) {
+            total += temp[i];
+        }
+
         average = total / 7;
 
         for(int i = 0; i < 7; i++) {
@@ -22,6 +29,6 @@ public class Atividade1 {
             }
         }
 
-        System.out.println(count + " temperaturas ficaram acima da média de " + average);
+        System.out.println(count + " temperaturas ficaram acima da média de " + decimalFormat.format(average)+"°");
     }
 }
