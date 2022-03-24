@@ -66,5 +66,5 @@
 
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
-Feito com ❤️ por Henrique Roldão 👋 [Entre em contato!](https://www.linkedin.com/in/henrique-rold%C3%A3o-2795191a2/)
+Feito com ❤️ por Henrique Roldão 👋 [Entre em contato!](https://www.linkedin.com/in/henrique-roldao/)
 
